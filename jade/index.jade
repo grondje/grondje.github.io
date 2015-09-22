@@ -6,50 +6,23 @@ head
 	link(rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-purple.min.css")
 	link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
 	script(src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js")
+	script(src="https://code.jquery.com/jquery-1.11.3.min.js")
+	script(src="https://code.jquery.com/jquery-migrate-1.2.1.min.js")
 	script(src="js/search.js")
 body.mdl-color--grey-100.mdl-color-text--grey-700
 	.mdl-layout.mdl-layout--fixed-header.mdl-js-layout
 		header.mdl-layout__header.mdl-color--primary
 			.mdl-layout__header-row
 				.mdl-layout-title Wikipedia Search
-		main.mdl-layout__content
-			form
+		main.mdl-layout__content.__w1200
+			form#form
 				.mdl-grid
 					.mdl-cell.mdl-cell--3-col-desktop
-					.mdl-textfield.mdl-js-textfield.mdl-cell.mdl-cell--6-col-desktop.mdl-cell--12-col-tablet.mdl-cell--12-col-phone
+					.mdl-textfield.mdl-js-textfield.mdl-cell.mdl-cell--6-col-desktop.mdl-cell--12-col-tablet.mdl-cell--12-col-phone.mdl-textfield--floating-label
 						input(type="text", id="wiki-inp_s").mdl-textfield__input
 						label(for="wiki-inp_s").mdl-textfield__label Что ищем?
 				.mdl-grid
 					.mdl-cell.mdl-cell--3-col-desktop
 					input(type="submit", value="Отправить").mdl-button.mdl-js-button.mdl-button--raised.mdl-cell.mdl-cell--6-col-desktop.mdl-cell--12-col-tablet.mdl-cell--12-col-phone.mdl-js-ripple-effect.mdl-button--primary
-			.mdl-grid
-				.mdl-card.mdl-cell.mdl-cell--4-col-desktop.mdl-cell--4-col-tablet.mdl-cell--12-col-phone.mdl-shadow--4dp
-					.mdl-card__title.mdl-color--indigo-600.mdl-color-text--white
-						h2.mdl-card__title-text title Text Goes Here
-					.mdl-card__supporting-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis quo consectetur necessitatibus, porro consequuntur?
-					.mdl-card__actions 
-						a.mdl-button.mdl-js-button.mdl-button--primary.mdl-js-ripple-effect Перейти по ссылке
-				.mdl-card.mdl-cell.mdl-cell--4-col-desktop.mdl-cell--4-col-tablet.mdl-cell--12-col-phone.mdl-shadow--4dp
-					.mdl-card__title.mdl-color--indigo-600.mdl-color-text--white
-						h2.mdl-card__title-text title Text Goes Here
-					.mdl-card__supporting-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis quo consectetur necessitatibus, porro consequuntur?
-					.mdl-card__actions 
-						a.mdl-button.mdl-js-button.mdl-button--primary.mdl-js-ripple-effect Перейти по ссылке
-				.mdl-card.mdl-cell.mdl-cell--4-col-desktop.mdl-cell--4-col-tablet.mdl-cell--12-col-phone.mdl-shadow--4dp
-					.mdl-card__title.mdl-color--indigo-600.mdl-color-text--white
-						h2.mdl-card__title-text title Text Goes Here
-					.mdl-card__supporting-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis quo consectetur necessitatibus, porro consequuntur?
-					.mdl-card__actions 
-						a.mdl-button.mdl-js-button.mdl-button--primary.mdl-js-ripple-effect Перейти по ссылке
-				.mdl-card.mdl-cell.mdl-cell--4-col-desktop.mdl-cell--4-col-tablet.mdl-cell--12-col-phone.mdl-shadow--4dp
-					.mdl-card__title.mdl-color--indigo-600.mdl-color-text--white
-						h2.mdl-card__title-text title Text Goes Here
-					.mdl-card__supporting-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis quo consectetur necessitatibus, porro consequuntur?
-					.mdl-card__actions 
-						a.mdl-button.mdl-js-button.mdl-button--primary.mdl-js-ripple-effect Перейти по ссылке
-				.mdl-card.mdl-cell.mdl-cell--4-col-desktop.mdl-cell--4-col-tablet.mdl-cell--12-col-phone.mdl-shadow--4dp
-					.mdl-card__title.mdl-color--indigo-600.mdl-color-text--white
-						h2.mdl-card__title-text title Text Goes Here
-					.mdl-card__supporting-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis quo consectetur necessitatibus, porro consequuntur?
-					.mdl-card__actions 
-						a.mdl-button.mdl-js-button.mdl-button--primary.mdl-js-ripple-effect Перейти по ссылке
+			.search_results
+				.mdl-grid
