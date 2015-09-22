@@ -11,3 +11,6 @@ p {
 
 .mdl-grid {
   max-width: 1200px; }
+
+.mdl-spinner {
+  margin: 0 auto; }

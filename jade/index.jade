@@ -21,8 +21,11 @@ body.mdl-color--grey-100.mdl-color-text--grey-700
 					.mdl-textfield.mdl-js-textfield.mdl-cell.mdl-cell--6-col-desktop.mdl-cell--12-col-tablet.mdl-cell--12-col-phone.mdl-textfield--floating-label
 						input(type="text", id="wiki-inp_s").mdl-textfield__input
 						label(for="wiki-inp_s").mdl-textfield__label Что ищем?
+						span.mdl-textfield__error Введите что-то
 				.mdl-grid
 					.mdl-cell.mdl-cell--3-col-desktop
 					input(type="submit", value="Отправить").mdl-button.mdl-js-button.mdl-button--raised.mdl-cell.mdl-cell--6-col-desktop.mdl-cell--12-col-tablet.mdl-cell--12-col-phone.mdl-js-ripple-effect.mdl-button--primary
+				.mdl-grid
+					.mdl-spinner.mdl-js-spinner.mdl-spinner--single-color
 			.search_results
 				.mdl-grid

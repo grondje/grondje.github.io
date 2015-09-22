@@ -23,12 +23,15 @@
           <div class="mdl-cell mdl-cell--3-col-desktop"></div>
           <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-textfield--floating-label">
             <input type="text" id="wiki-inp_s" class="mdl-textfield__input">
-            <label for="wiki-inp_s" class="mdl-textfield__label">Что ищем?</label>
+            <label for="wiki-inp_s" class="mdl-textfield__label">Что ищем?</label><span class="mdl-textfield__error">Введите что-то</span>
           </div>
         </div>
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--3-col-desktop"></div>
           <input type="submit" value="Отправить" class="mdl-button mdl-js-button mdl-button--raised mdl-cell mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-js-ripple-effect mdl-button--primary">
+        </div>
+        <div class="mdl-grid">
+          <div class="mdl-spinner mdl-js-spinner mdl-spinner--single-color"></div>
         </div>
       </form>
       <div class="search_results">
