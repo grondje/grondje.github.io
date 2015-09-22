@@ -7,6 +7,7 @@ $(function() {
 
 
 	$('#form').on('submit',(function(e) {
+		$('#form').addClass('__pad300');
 		e.preventDefault();
 		$('.search_results .mdl-grid').html('');
 		$('.mdl-textfield').removeClass('is-invalid');
@@ -30,6 +31,7 @@ $(function() {
 				},
 	 			dataType: 'jsonp',
 				success: function (x) {
+						$('#form').removeClass('__pad300')
 						$('.mdl-spinner').removeClass('is-active');
 						$.each(x.query.pages, function(index, val) {
 							var pageTitle = val.title;
