@@ -7,10 +7,11 @@ $(function() {
 
 
 	$('#form').on('submit',(function(e) {
-		$('#form').addClass('__pad300');
 		e.preventDefault();
-		$('.search_results .mdl-grid').html('');
+		$('.nothing_find').addClass('__display_n');
+		$('#form').addClass('__pad300');
 		$('.mdl-textfield').removeClass('is-invalid');
+		$('.search_results .mdl-grid').html('');
 		searchValue = $('#wiki-inp_s').val();
 		if (!searchValue) {
 			$('.mdl-textfield').addClass('is-invalid');
@@ -31,8 +32,9 @@ $(function() {
 				},
 	 			dataType: 'jsonp',
 				success: function (x) {
-						$('#form').removeClass('__pad300')
-						$('.mdl-spinner').removeClass('is-active');
+					$('#form').removeClass('__pad300')
+					$('.mdl-spinner').removeClass('is-active');
+					if (x.query.search.length) {
 						$.each(x.query.pages, function(index, val) {
 							var pageTitle = val.title;
 							var pageUrl = val.canonicalurl;
@@ -55,6 +57,10 @@ $(function() {
 							$('.search_results .mdl-grid').append(newTemplate);
 						});
 					}
+					else{
+						$('.nothing_find').removeClass('__display_n');
+					}
+				}
 			});
 		}
 	}));
