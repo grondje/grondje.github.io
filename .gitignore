@@ -1,0 +1,8 @@
+/bower_components*
+/node_modules*
+/PSD/*
+/*.sublime*
+/todo.todo
+
+#/public
+#/img*
