@@ -16,8 +16,8 @@ p {
   margin: 0 auto; }
 
 form {
-  -webkit-transition: all, 0.6s, cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  transition: all, 0.6s, cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+  -webkit-transition: all, 0.5s, cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition: all, 0.5s, cubic-bezier(0.6, -0.28, 0.735, 0.045); }
 
 .__pad300 {
   padding-top: 300px; }
