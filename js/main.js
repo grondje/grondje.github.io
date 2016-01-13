@@ -1,3 +1,5 @@
+var $ = require('jquery');
+
 $(function() {
 	var template = "<div class='mdl-card mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-shadow--4dp'><div class='mdl-card__title mdl-color--indigo-600 mdl-color-text--white'><h2 class='mdl-card__title-text'>card-title</h2></div><div class='mdl-card__supporting-text'>card-text</div><div class='mdl-card__actions'> <a target='_blank' href='card-link' class='mdl-button mdl-js-button mdl-button--primary mdl-js-ripple-effect' data-upgraded=',MaterialButton,MaterialRipple'>Перейти по ссылке<span class='mdl-button__ripple-container'><span class='mdl-ripple'></span></span></a></div></div>",
 		searchValue,
@@ -32,6 +34,7 @@ $(function() {
 				},
 	 			dataType: 'jsonp',
 				success: function (x) {
+					console.log(x);
 					$('#form').removeClass('__pad300')
 					$('.mdl-spinner').removeClass('is-active');
 					if (x.query.search.length) {
