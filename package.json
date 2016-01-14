@@ -11,9 +11,12 @@
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "gulp-autoprefixer": "^3.0.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.0.1",
     "gulp-prettify": "^0.3.0",
     "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.7",
     "webpack": "^1.12.2",
     "webpack-stream": "^2.1.0"
   },
